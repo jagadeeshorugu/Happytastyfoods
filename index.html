@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Tasty Food</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #fdf6f0;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(45deg, #ff6b6b, #f7d794);
+      padding: 40px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #333;
+    }
+
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: yellow;
+    }
+
+    /* Section Container */
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 40px auto;
+    }
+
+    /* Food Grid */
+    .food-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .food-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .food-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .food-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .food-card h3 {
+      padding: 15px;
+      background: #ff6b6b;
+      color: white;
+      margin: 0;
+      text-align: center;
+    }
+
+    .food-card p {
+      padding: 15px;
+      font-size: 0.95rem;
+      color: #555;
+      text-align: center;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🍕 Happy Tasty Food</h1>
+    <p>Delicious Dishes Around the World</p>
+  </header>
+
+  <nav>
+    <a href="#foods">Foods</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container" id="foods">
+    <h2 style="text-align:center; margin-bottom:20px;">Our Special Dishes</h2>
+    <div class="food-grid">
+      <div class="food-card">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.hdOWXVz6bZ3E18-Iw49FngHaEK?pid=Api&P=0&h=180" alt="Tiffins">
+        <h3>South Indian Tiffins</h3>
+        <p>A good morning tiffins with beatiful food and good taste.</p>
+      </div>
+      <div class="food-card">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.G3y6VAtGPof-P4u3d2x1gAHaEK?pid=Api&P=0&h=180" alt="Coffee">
+        <h3>Indian Coffee</h3>
+        <p>A beatiful morning with good tasty coffee.</p>
+      </div>
+      <div class="food-card">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.EL8Gj_WoxayxQAXBiBDhlgHaED?pid=Api&P=0&h=180" alt="Thali">
+        <h3>South Indian Thali</h3>
+        <p>Classic food with crispy crust and fresh food with good taste.</p>
+      </div>
+      <div class="food-card">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.DHL9ZWldA5aS9wcLXy8d5gHaEV?pid=Api&P=0&h=180" alt="Pizza">
+        <h3>Cheese Pizza</h3>
+        <p>Classic cheese pizza with crispy crust and fresh tomato sauce.</p>
+      </div>
+      <div class="food-card">
+        <img src="https://img.freepik.com/premium-photo/cheese-burger-is-mouth-watering-cheesy-with-bacon-lettuce-tomato-cheese-inside-ai-generated_224526-9.jpg" alt="Burger">
+        <h3>Juicy Burger</h3>
+        <p>A mouth-watering burger loaded with cheese, lettuce, and beef.</p>
+      </div>
+      <div class="food-card">
+        <img src="https://thumbs.dreamstime.com/b/plate-pasta-plate-pasta-spaghetti-cheese-tomato-top-view-127780527.jpg" alt="Pasta">
+        <h3>Italian Pasta</h3>
+        <p>Creamy Alfredo pasta cooked with fresh herbs and parmesan.</p>
+      </div>
+      <div class="food-card">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.K8JGxfjZAILVWGmWLGG_CQHaE8?pid=Api&P=0&h=180" alt="Dessert">
+        <h3>Chocolate Dessert</h3>
+        <p>Sweet chocolate mousse topped with strawberries and cream.</p>
+      </div>
+      <div class="food-card">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.blUvXA5gISEz1LL2jjETqQHaE7?pid=Api&P=0&h=180" alt="ice-creams">
+        <h3>Cool ice-creams</h3>
+        <p>Sweet chocolate butter chouch topped with nuts and ice-creams.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="about">
+    <h2 style="text-align:center; margin-bottom:20px;">About Us</h2>
+    <p style="text-align:center;">We bring you the tastiest food from around the world. Fresh, delicious, and cooked with love.</p>
+  </div>
+
+  <div class="container" id="contact">
+    <h2 style="text-align:center; margin-bottom:20px;">Contact Us</h2>
+    <p style="text-align:center;">📍 Location: Food Street, City <br> 📞 Phone: +91 8341704239</p>
+  </div>
+
+  <footer>
+    <p>© 2025 Tasty Food. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
